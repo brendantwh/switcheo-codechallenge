@@ -1,13 +1,17 @@
 # Switcheo Code Challenge
 
-### Role: Frontend
+## Role: Frontend
 
-Problem 1: Three ways to sum to n
+### Problem 1: Three ways to sum to n
 
-Problem 2: Fancy Form
+### Problem 2: Fancy Form
 
-Problem 3: Datasource Connector Tool
+Valid ETH address to try: 0x8ba1f109551bd432803012645ac136ddd64dba72
 
-Problem 4: Interacting with Chain
+Valid OTP code: 111 111 (any other OTP code invalid)
 
-Problem 5: Utility Contract
+### Problem 3: Datasource Connector Tool
+
+### Problem 4: Interacting with Chain
+
+### Problem 5: Utility Contract
