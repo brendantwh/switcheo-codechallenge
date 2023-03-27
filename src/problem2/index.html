@@ -195,12 +195,11 @@
       modal.hide();
     }
 
-    // valid address: 0x8ba1f109551bd432803012645ac136ddd64dba72
     const web3 = new Web3("https://cloudflare-eth.com");
     var addricon = document.getElementById("addr-icon");
     var addrerror = document.getElementById("addr-error");
     function validaddr(elem) {
-      if (!web3.utils.isAddress(elem.value)) {
+      if (!web3.utils.isAddress(elem.value.trim())) {
         addricon.classList.add("bg-red-300");
         addrerror.classList.remove("invisible");
         return false;
