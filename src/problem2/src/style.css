@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Open Sauce Sans';
+    font-weight: 400;
+    src: url('../src/fonts/OpenSauceSans-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Open Sauce Sans';
+    font-weight: 500;
+    src: url('../src/fonts/OpenSauceSans-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Open Sauce Sans';
+    font-weight: 600;
+    src: url('../src/fonts/OpenSauceSans-SemiBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Open Sauce Sans';
+    font-weight: 700;
+    src: url('../src/fonts/OpenSauceSans-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Open Sauce Sans';
+    font-weight: 800;
+    src: url('../src/fonts/OpenSauceSans-ExtraBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Open Sauce Sans';
+    font-weight: 900;
+    src: url('../src/fonts/OpenSauceSans-Black.ttf') format('truetype');
+  }
+}
+
+@layer components {
+  .input-icon {
+    @apply px-3 text-sm text-gray-50 bg-gray-400 border-0 rounded-l-md;
+  }
+
+  #otp .otp-base {
+    @apply mr-1.5 h-10 w-10 text-center rounded font-medium;
+  }
+  
+  #otp .otp-entry {
+    @apply otp-base bg-gray-200 border border-gray-200 focus:ring-blue-500 focus:border-blue-500;
+  }
+
+  #otp .otp-error {
+    @apply bg-gray-200 border border-red-500 focus:ring-red-500 focus:border-red-500;
+  }
+
+  #otp .otp-wait {
+    @apply bg-gray-300 border border-gray-300;
+  }
+
+  #otp .otp-ac {
+    @apply bg-emerald-200 border-0 focus:ring-green-500 focus:border-green-500;
+  }
+}
