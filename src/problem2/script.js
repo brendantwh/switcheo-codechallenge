@@ -72,10 +72,15 @@ async function submitOTP(inputs) {
   
     proceed.classList.remove("invisible");
   } else {
-    inputs.forEach((val) => {
-      val.removeAttribute("disabled");
+    inputs.forEach(async (val) => {
       val.classList.add("otp-error");
       val.classList.remove("otp-wait");
+
+      await sleep(1000);
+      val.removeAttribute("disabled");
+      val.classList.remove("otp-error");
+      val.classList.add("otp-entry");
+      val.value = '';
     });
   }
 }
